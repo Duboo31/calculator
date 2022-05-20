@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.calc {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: rgb(0, 0, 0);
+    padding: 3rem 1rem;
+    border-radius: 1.5rem;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border: 5px solid #A3A3A3;
+}
+
+.input-container {
+    grid-column: span 4;
+    background: black;
+    border: none;
+    color: #fff;
+    text-align: end;
+    margin: .8rem;
+    width: calc(200px + 1.5rem);
+    font-size: 3rem;
+    outline: none;
+}
+
+.calc > button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    margin: .3rem;
+    font-size: 1.4rem;
+    background: #333333;
+    color: #fff;
+}
+
+.calc > button:nth-child(2),
+.calc > button:nth-child(3),
+.calc > button:nth-child(4) {
+    background: #A3A3A3;
+    color: black;
+}
+
+.calc > button:nth-child(5),
+.calc > button:nth-child(9),
+.calc > button:nth-child(13),
+.calc > button:nth-child(17),
+.calc > button:nth-child(20) {
+    background: #FE9400;
+    font-size: 1.8rem;
+}
+
+.calc > button:nth-child(18) {
+    width: calc(100px + .8rem);
+    border-radius: 42px;
+    grid-column: span 2;
+}
+
