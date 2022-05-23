@@ -76,7 +76,6 @@ function mathOperation() {
 
 
 // EVENTS
-
 equalEl.addEventListener("click", (e) => {
     if(!display1Num || !display2Num) {
         return;
