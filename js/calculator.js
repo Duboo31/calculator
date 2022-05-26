@@ -148,6 +148,7 @@ window.addEventListener("keydown", (e) => {
   }
 });
 
+// 숫자 클릭
 function clickButtonEl(key) {
   numbersEl.forEach(button => {
       if(button.innerText === key) {
@@ -156,6 +157,7 @@ function clickButtonEl(key) {
   })
 };
 
+// 기호 클릭
 function clickOperation(key) {
   operationEl.forEach(button => {
       if(button.innerText === key) {
