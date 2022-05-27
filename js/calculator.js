@@ -37,7 +37,7 @@ numbersEl.forEach(number => {
   })
 })
 
-// operation click Enven
+// operation click Event
 operationEl.forEach(operation => {
   operation.addEventListener("click", (e) => {
     // 기호 앞에 아무값도 없을 경우 아무것도 실행할 수 없음
